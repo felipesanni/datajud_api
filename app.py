@@ -19,6 +19,3 @@ def get_estatisticas():
         return jsonify(estatisticas)
     else:
         return jsonify({"error": "Não foi possível obter as estatísticas"}), response.status_code
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
